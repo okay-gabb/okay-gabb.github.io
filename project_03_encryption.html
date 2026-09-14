@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cool.css">
+    <title>Gabb - App_Encryption_Integration.txt</title>
+</head>
+<body class="theme--light offset">
+
+
+    <!-- ============================================
+       [SEC] HEADER 
+    =============================================== -->
+    <main class="showcase wrapper flex">
+
+
+        <!-- + [SUB] BACK BUTTON + -->
+        <header class="showcase__header flex">
+
+
+            <a class="link--navigation flex" href="index.html">[ ← Home ]</a>
+
+            <div class="ascii--border">
+                = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+            </div>
+
+
+            <!-- + [SUB] PAGE TITLE + -->
+            <div class="showcase__title flex">
+
+
+                <p>Spartan Camera</p>
+                <h1>AES-256 Encryption Integration</h1>
+
+
+            </div>
+
+
+            <!-- + [SUB] PROJECT DETAILS   + -->
+            <div class="showcase__details flex">
+
+
+                <div class="ascii--border">
+                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                </div>
+
+                <p>
+
+
+                    Project Showcase Copyright © 2026 <br />
+                    LAST UPDATED: Oct, 2026 <br />
+                    AUTHOR: ⊹ Gabb ⊹ <br />
+                    VERSION: 1.4
+
+
+                </p>
+
+
+            </div>
+
+
+            <!-- + [SUB] ROLE  + -->
+            <div class="showcase__info flex">
+
+
+                <div class="ascii__title flex">
+
+
+                    <div class="ascii--border">
+                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    </div>
+                    <h2>+++ Role +++</h2>
+
+
+                </div>
+
+                <p>Product Designer</p>
+
+                <p>My job here was to design a decryption flow for a new encryption system for our newest products.</p>
+
+                <p>The main challenge was making sure the mobile app and server could handle the encryption without permanently storing the encryption key anywhere.</p>
+
+                <p>This meant I had to map out how users would interact with encrypted images, when the app needed to decrypt them, and how we could keep the whole process mostly seamless for the user.</p>
+
+
+            </div>
+
+
+            <!-- + [SUB] DESCRIPTION  + -->
+            <div class="showcase__info flex">
+
+
+                <div class="ascii__title flex">
+
+
+                    <div class="ascii--border">
+                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    </div>
+                    <h2>+++ Description +++</h2>
+
+
+                </div>
+
+                <p>This project focused on integrating encrypted images into the Spartan Camera app, allowing users to securely receive and decrypt transmitted images directly inside the app.</p>
+
+                <p>Originally requested by a government agency we work with, but the solution ended up being simple enough to include as part of the production firmware so it could be accessible to everyday users as well.</p>
+
+                <p>The full process can be found below.</p>
+
+                <!-- + Description links  + -->
+                <div class="showcase__links flex">
+
+
+                    <P>> <a class="link" href="https://www.figma.com/design/fsPNc8hipQ1ApLU5PiTauA/Local-Encryption?node-id=4004-1034&t=Iw2V4iK0RYUCBDnH-1" target="_blank" rel="noopener">View Figma Project</a></P>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+        <!-- ============================================
+            [SEC] SECTION 01
+        =============================================== -->
+        <section class="showcase__section flex">
+
+
+            <!-- + [SUB] PROBLEM 03  + -->
+            <div class="showcase__conflict flex">
+
+
+                <div class="conflict__header flex">
+
+
+                    <div class="ascii--border">
+                        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                    </div>
+
+                    <h2>[ 01 ] App Integration</h2>
+
+                    <div class="ascii--border">
+                        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                    </div>
+
+
+                </div>
+
+                <!-- + problem copy 03  + -->
+                <div class="solution__img--L flex">
+
+
+                    <img class="img--showcase showcase__img--row flex" src="assets/project_03_encyption/01_integration_p1.png" alt="" />
+
+                    <div class="solution__copy flex">
+
+
+                        <p>The biggest challenge was making encryption work without making the entire app slower.</p>
+
+                        <p>If every image had to go through the decryption process, we'd be adding extra processing time to basically everyone, including users who weren't even using encrypted photos.</p>
+
+                        <p>Fuck that!</p>
+
+                        <p> </p>
+
+                        <p>So instead of treating every image as encrypted by default, we needed a way for the app to know when decryption was actually necessary.</p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="showcase__solution flex">
+
+
+                <div class="ascii__title flex">
+
+
+                    <div class="ascii--border">
+                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    </div>
+                    <h2>+++ Solutions +++</h2>
+
+
+                </div>
+
+                <!-- + [SUB] SOLUTION  + -->
+                <div class="solution__img--R flex">
+
+
+                    <img class="img--showcase showcase__img--row flex" src="assets/project_03_encyption/01_integration_s1.png" alt="" />
+
+                    <div class="solution__copy flex">
+
+
+                        <p>We added a key to the API that tells the app whether the images coming from a camera require decryption.</p>
+
+                        <p>This key is updated by the camera whenever its encryption setting is turned ON or OFF. That meant the app could check the API response and only run the decryption process when it actually needed to.</p>
+
+                        <p>Simple!</p>
+
+                        <p> </p>
+
+                        <p>Having this API key allowed us to run the decryption algorithm only when absolutely necessary, instead of adding a blanket loading time to the entire image browsing experience.</p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+           <!-- + impact  + -->
+            <div class="showcase__impact flex">
+
+
+                <div class="ascii__title flex">
+
+
+                    <div class="ascii--border">
+                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    </div>
+                    <h2>+++ Impact +++</h2>
+
+
+                </div>
+
+                <div class="impact__copy flex">
+
+
+                    <p>The final solution gave us a way to support encrypted images without making the encryption process everyone else's problem.</p>
+
+                    <p>Users with encrypted photos could securely receive and view their images inside the app, while everyone else could continue using the app normally without an extra wait.</p>
+
+                    <p>The cool thing is that most users won't even know the feature is there until they need it.</p>
+
+                    <p>Kinda how security features should actually feel.</p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================================
+            [SEC] BOTTOM NAV
+        =============================================== -->
+        <nav class="bottom__nav flex">
+
+
+            <div class="ascii--border">
+                = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+            </div>
+
+            <p>END</p>
+
+            <div class="ascii--border">
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            </div>
+
+            <!-- + [SUB] PROJECT LINKS  + -->
+            <div class="showcase__links flex">
+
+
+                <P>> <a class="link" href="project_01_storefront.html">Storefront Redesign</a></P>
+                <P>> <a class="link" href="project_02_dtekt.html">App & Design System Upgrade</a></P>
+                <P>< App Encryption Integration</P>
+                <P>> <a class="link" href="project_04_settings.html">Camera Settings App Overhaul</a></P>
+
+
+            </div>
+
+            <!-- + [SUB] NAVIGATION LINKS  + -->
+            <div class="bottom__navigation flex">
+
+
+                <a class="link--navigation" href="index.html">[ ← Home]</a>
+                <p>/</p>
+                <a class="link--navigation" href="#top">[ ↑ Top]</a>
+
+
+            </div>
+
+            <div class="ascii--border">
+                = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+            </div>
+
+
+        </nav>
+
+    </main>
+
+
+    <!-- ============================================
+       [SEC] FOOTER
+    =============================================== -->
+    <footer class="footer flex theme--dark">
+
+        <!-- + [SUB] FOOTER COPY + -->
+        <div class="footer__copy wrapper flex">
+
+
+            <div class="footer__title flex">
+
+
+                <h4>Gabb</h4>
+                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="here i am, doing a wahoo moment. so cool so wow so awsome so nice, thank you for reaching the bottom of the page in this brazy day and age where we have zero to no patience to read more then 90s wawa!">
+
+                
+            </div>
+
+            <p>You have reached the end of the page. <br />
+            The bunny wonders why you're still reading...</p>
+
+
+        </div>
+
+        <!-- + [SUB] FOOTER LINKS + -->
+        <section class="footer__links wrapper flex">
+
+
+            <a class="link--primary" href="assets/global/Resume - Gabriel Bocaletti.pdf" target="_blank" rel="noopener">Resume</a>
+            <p>/</p>
+            <a class="link" href="mailto:hello@gabb.design">Email: hello@gabb.design</a>
+
+
+        </section>
+
+
+    </footer>
+    
+</body>
+</html>

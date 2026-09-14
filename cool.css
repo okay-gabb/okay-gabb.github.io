@@ -1,0 +1,756 @@
+/* ==============================================
+   . + . + . + . GLOBAL COMPONENTS . + . + . + .
+=============================================== */
+
+/* --------------------------------------------
+   !! STARTUP
+-------------------------------------------- */
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+/* --------------------------------------------
+   !! GLOBALS
+-------------------------------------------- */
+
+/* +++ ----- wrapper ----- +++ */
+.wrapper {
+    width: 100%;
+    padding: 0 1.5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        padding: 0 3rem;
+    }
+}
+
+/* +++ ----- flex ----- +++ */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* +++ -----  flex spacing ----- +++ */
+:root {
+    --gap-8: 0.5rem;
+    --gap-24: 1.5rem;
+    --gap-48: 3rem;
+    --gap-80: 5rem;
+}
+
+
+/* --------------------------------------------
+   !! COLORS
+-------------------------------------------- */
+
+:root {
+
+    /* --- greys --- */
+    --grey-F5: #f5f5f5;
+    --grey_EA: #eaeaea;
+    --grey_CC: #CCCCCC;
+    --grey_88: #888888;
+    --grey_44: #444444;
+    --grey_17: #171717;
+    --grey_12: #121212;
+    --grey_0D: #0D0D0D;
+    --grey_07: #070707;
+
+
+    /* --- Accents --- */
+    --accent_blue: #3D58F4;
+    --accent_red: #E6575C;
+    --accent_yellow: #F4A454;
+    --accent_teal: #487DF0;
+
+}
+
+
+/* --------------------------------------------
+   !! PAGE THEMES
+-------------------------------------------- */
+
+/* +++ ----- DARK THEME ----- +++ */
+.theme--dark {
+    --font-h1: 'Outfit', sans-serif;
+    --font-h1-color: var(--grey_EA);
+    --font-h1-size: 2rem;
+    --font-h1-weight: 700;
+
+    --font-h2: 'Outfit', sans-serif;
+    --font-h2-color: var(--grey_EA);
+    --font-h2-size: 2rem;
+    --font-h2-weight: 500;
+
+    --font-h3: 'Outfit', sans-serif;
+    --font-h3-color: var(--grey_88);
+    --font-h3-size: 1.125rem;
+    --font-h3-weight: 400;
+
+    --font-h4: 'Outfit', sans-serif;
+    --font-h4-color: var(--grey_EA);
+    --font-h4-size: 5rem;
+    --font-h4-weight: 700;
+
+    --font-text: 'Outfit', sans-serif;
+    --font-text-color: var(--grey_CC);
+    --font-text-size: 1.125rem;
+    --font-text-weight: 400;
+
+    --font-link-primary: 'Outfit', sans-serif;
+    --font-link-primary-color: var(--grey_07);
+    --font-link-primary-size: 1.125rem;
+    --font-link-primary-weight: 400;
+    --font-link-primary-background-color: var(--grey_EA);
+
+    --font-link: 'Outfit', sans-serif;
+    --font-link-color: var(--grey_EA);
+    --font-link-size: 1.125rem;
+    --font-link-weight: 400;
+
+    --font-link-navigation: 'SpaceMono', Courier, monospace;
+    --font-link-navigation-color: var(--grey-F5);
+    --font-link-navigation-size: 1.125rem;
+    --font-link-navigation-weight: 400;
+
+    --bg-color: var(--grey_07);
+}
+
+
+/* +++ ----- LIGHT THEME ----- +++ */
+.theme--light {
+    --font-h1: 'Outfit', sans-serif;
+    --font-h1-color: var(--grey_17);
+    --font-h1-size: 2rem;
+    --font-h1-weight: 700;
+
+    --font-h2: 'SpaceMono', Courier, monospace;
+    --font-h2-color: var(--grey_44);
+    --font-h2-size: 1.125rem;
+    --font-h4-weight: 400;
+
+    --font-h3: 'SpaceMono', Courier, monospace;
+    --font-h3-color: var(--grey_88);
+    --font-h3-size: 1.125rem;
+    --font-h3-weight: 400;
+
+    --font-h4: 'SpaceMono', Courier, monospace;
+    --font-h4-color: var(--grey_44);
+    --font-h4-size: 1.125rem;
+    --font-h4-weight: 400;
+
+    --font-text: 'SpaceMono', Courier, monospace;
+    --font-text-color: var(--grey_44);
+    --font-text-size: 1.125rem;
+    --font-text-weight: 400;
+
+    --font-link-primary: 'Outfit', sans-serif;
+    --font-link-primary-color: var(--grey_EA);
+    --font-link-primary-size: 1.125rem;
+    --font-link-primary-weight: 400;
+    --font-link-primary-background-color: var(--accent_blue);
+
+    --font-link: 'SpaceMono', Courier, monospace;
+    --font-link-color: var(--accent_blue);
+    --font-link-size: 1.125rem;
+    --font-link-weight: 400;
+
+    --font-link-navigation: 'SpaceMono', Courier, monospace;
+    --font-link-navigation-color: var(--grey_07);
+    --font-link-navigation-size: 1.125rem;
+    --font-link-navigation-weight: 400;
+
+    --bg-color: var(--grey_0D);
+}
+
+
+/* --------------------------------------------
+   !! FONTS
+-------------------------------------------- */
+
+/* +++ ----- FONT SOURCE ----- +++ */
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/global/Outfit-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('assets/global/SpaceMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+
+/* +++ ----- FONT STYLES ----- +++ */
+h1 {
+    max-width: 50rem;
+    font-family: var(--font-h1);
+    font-weight: var(--font-h1-weight);
+    font-size: var(--font-h1-size);
+    color: var(--font-h1-color);
+}
+
+h2 {
+    max-width: 50rem;
+    font-family: var(--font-h2);
+    font-weight: var(--font-h2-weight);
+    font-size: var(--font-h2-size);
+    color: var(--font-h2-color);
+}
+
+h3 {
+    max-width: 50rem;
+    font-family: var(--font-h3);
+    font-weight: var(--font-h3-weight);
+    font-size: var(--font-h3-size);
+    color: var(--font-h3-color);
+}
+
+h4 {
+    max-width: 50rem;
+    font-family: var(--font-h4);
+    font-weight: var(--font-h4-weight);
+    font-size: var(--font-h4-size);
+    color: var(--font-h4-color);
+}
+
+p {
+    max-width: 50rem;
+    font-family: var(--font-text);
+    font-weight: var(--font-text-weight);
+    font-size: var(--font-text-size);
+    color: var(--font-text-color);
+}
+
+
+/* --------------------------------------------
+   !! LINKS
+-------------------------------------------- */
+
+/* +++ ----- PRIMARY LINK ----- +++ */
+.link--primary {
+    max-width: 50rem;
+    font-family: var(--font-link-primary);
+    font-weight: var(--font-link-primary-weight);
+    font-size: var(--font-link-primary-size);
+    color: var(--font-link-primary-color);
+
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--font-link-primary-background-color);
+}
+
+
+/* +++ ----- MAIN LINK ----- +++ */
+.link {
+    max-width: 50rem;
+    font-family: var(--font-link);
+    font-weight: var(--font-link-weight);
+    font-size: var(--font-link-size);
+    color: var(--font-link-color);
+
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 12%; /* 1.6px */
+    text-underline-offset: 24%; /* 2.4px */
+}
+
+
+/* +++ ----- SHOWCASE NAVIGATION LINK ----- +++ */
+.link--navigation {
+    max-width: 50rem;
+    font-family: var(--font-link-navigation);
+    font-weight: var(--font-link-navigation-weight);
+    font-size: var(--font-link-navigation-size);
+    color: var(--font-link-navigation-color);
+
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+}
+
+
+/* --------------------------------------------
+   !! IMAGES
+-------------------------------------------- */
+
+/* +++ ----- PIXELATED IMAGES ----- +++ */
+.img--pixelated--s {
+    max-width: 3rem;
+    object-fit: cover;
+    image-rendering: pixelated;
+    aspect-ratio: 1 / 1;
+}
+
+.img--pixelated--m {
+    max-width: 6rem;
+    object-fit: cover;
+    image-rendering: pixelated;
+    aspect-ratio: 1 / 1;
+}
+
+
+.img--pixelated--l {
+    max-width: 8rem;
+    object-fit: cover;
+    image-rendering: pixelated;
+    aspect-ratio: 1 / 1;
+}
+
+.img--pixelated--xl {
+    width: 100%;
+    max-width: 1024px;
+    image-rendering: pixelated;
+}
+
+
+/* +++ ----- CARD IMAGES ----- +++ */
+.img--card {
+    aspect-ratio: 1/1;
+}
+
+
+/* +++ ----- ABOUT IMAGE ----- +++ */
+.img--about {
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+
+/* +++ ----- SHOWCASE IMAGES ----- +++ */
+.img--showcase {
+    border-radius: 0.25rem;
+
+    max-width: 43rem;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+
+    /* border: 0.125rem solid var(--grey_EA);
+    background-color: var(--grey_EA); */
+}
+
+
+/* ==============================================
+   . + . + . + . + . HELLO PAGE . + . + . + . + .
+=============================================== */
+
+/* +++ ----- HEADER ----- +++ */
+.header {
+    background: radial-gradient(94.17% 100% at 50% 0%, var(--grey_17) 0%, var(--grey_07) 100%);
+}
+
+
+.header__hero {
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-8);
+    padding: 1.5rem 0;
+
+    min-height: 65vh;
+}
+
+
+/* +++ ----- TITLE ----- +++ */
+.hero__title {
+    width: 100%;
+    align-items: center;
+    gap: var(--gap-24);
+}
+
+
+/* +++ ----- SPARKLES ----- +++ */
+.sparkle--L {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.sparkle--R {
+    width: 100%;
+    align-self: flex-end;
+}
+
+
+/* +++ ----- INDICATOR ----- +++ */
+.header__indicator {
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+}
+
+.img--indicator {
+    width: 100%;
+}
+
+
+/* +++ ----- HIGLIGHTED TEXT ----- +++ */
+.hilight {
+    color: var(--grey-F5);
+}
+
+
+/* +++ ----- INTRO ----- +++ */
+.header__intro {
+    padding: 5rem 0;
+    gap: var(--gap-48);
+}
+
+
+.intro__copy {
+    gap: var(--gap-24);
+}
+
+/* +++ ----- INTRO LINKS ----- +++ */
+.intro__links {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-24);
+}
+
+
+/* +++ ----- PROJECTS ----- +++ */
+.projects {
+    border-top: 0.125rem solid var(--grey_17);
+    background: var(--grey_0D);
+    gap: var(--gap-80);
+    padding: 5rem 0;
+}
+
+.projects__list {
+    gap: var(--gap-48);
+}
+
+/* +++ ----- CARDS ----- +++ */
+.card__link--L,
+.card__link--R {
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 0.25rem;
+    padding: 0 1.5rem;
+    background: linear-gradient(var(--grey_12), var(--grey_17));
+}
+
+.card__copy {
+    padding: 4rem 0 0.5rem 0;
+    gap: var(--gap-24);
+    align-items: center; 
+    text-align: center;
+}
+
+.card__title {
+    gap: var(--gap-8);
+}
+
+/* +++ ----- little accent colors for the cards ----- +++ */
+.accent--blue {
+    border-bottom: 0.375rem solid var(--accent_blue);
+}
+
+
+.accent--red {
+    border-bottom: 0.375rem solid var(--accent_red);
+}
+
+
+.accent--yellow {
+   
+    border-bottom: 0.375rem solid var(--accent_yellow);
+}
+
+
+.accent--teal {
+    border-bottom: 0.375rem solid var(--accent_teal);
+}
+
+/* +++ ----- HELLO PAGE DESKTOP ----- +++ */
+@media (min-width: 1024px) {
+    .card__link--L {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: var(--gap-24);
+    }
+
+
+    .card__link--R {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gap-24);
+    }
+
+    .card__copy {
+        flex: 1;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 4rem 2rem;
+    }
+
+    .img--card {
+        flex: 1;
+        width: 0;
+    }
+}
+
+
+
+/* ==============================================
+   + . + . + . + . + . ABOUT . + . + . + . + . +
+=============================================== */
+.about {
+    background: radial-gradient(94.17% 100% at 50% 0%, var(--grey_17) 0%, var(--grey_0D) 100%);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.about__container {
+    gap: var(--gap-48);
+}
+
+.about__content {
+    gap: var(--gap-24);
+}
+
+.about__copy {
+    gap: var(--gap-24);
+}
+
+.about__p {
+    gap: var(--gap-8);
+}
+
+.about__links {
+    flex-direction: row;
+    gap: var(--gap-24);
+    align-items: center;
+}
+
+.trapdoor {
+    gap: var(--gap-8);
+}
+
+
+/* +++ ----- ABOUT DESKTOP ----- +++ */
+@media (min-width: 960px) {
+    .about__content {
+        flex-direction: row;
+    }
+
+    .about__copy {
+        flex: 1;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .img--about {
+        flex: 1;
+        width: 0;
+    }
+}
+
+
+
+/* ==============================================
+   . + . + . + . PROJECT SHOWCASE . + . + . + .
+=============================================== */
+.offset {
+    margin-top: 1.5rem;
+}
+
+
+/* +++ ----- ASCII ----- +++ */
+.ascii--border {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 50rem;
+}
+
+
+.ascii__title {
+    gap: var(--gap-8);
+}
+
+
+/* +++ ----- LINKS ----- +++ */
+.showcase__links {
+    gap: var(--gap-8);
+}
+
+
+/* +++ ----- SHOWCASE ----- +++ */
+.showcase {
+    max-width: 1440px;
+    background-color: var(--grey-F5);
+    border-radius: 0.5rem;
+    margin: auto;
+    gap: 8rem;
+}
+
+
+.showcase__header {
+    padding-top: 3rem;
+    gap: var(--gap-80);
+}
+
+
+.showcase__title {
+    gap: var(--gap-24);
+}
+
+
+.showcase__details {
+    gap: var(--gap-8);
+}
+
+
+/* +++ ----- ROLE AND DESCRIPTION ----- +++ */
+.showcase__info {
+    gap: var(--gap-24);
+
+}
+
+
+/* +++ ----- CONFLICT ----- +++ */
+.showcase__section {
+    gap: var(--gap-80);
+}
+
+.showcase__conflict {
+    gap: var(--gap-24);
+}
+
+.conflict__header {
+    gap: var(--gap-8);
+    padding-bottom: var(--gap-24);
+}
+
+.showcase__img--single {
+    max-width: 43rem;
+}
+
+
+/* +++ ----- SOLUTION ----- +++ */
+.showcase__solution {
+    gap: var(--gap-24);
+}
+
+.solution__copy {
+    gap: var(--gap-24);
+}
+
+
+/* +++ ----- IMPACT ----- +++ */
+.showcase__impact {
+    gap: var(--gap-24);
+}
+
+.impact__copy {
+    gap: var(--gap-24);
+}
+
+
+/* +++ ----- IMGS ----- +++ */
+.solution__img--double,
+.solution__img--L,
+.solution__img--R {
+    gap: var(--gap-24);
+}
+
+/* +++ ----- NAV ----- +++ */
+.bottom__nav {
+    gap: var(--gap-24);
+    padding-bottom: 3rem;
+}
+
+.bottom__navigation {
+    flex-direction: row;
+    gap: var(--gap-24);
+}
+
+
+/* +++ ----- PROJECT SHOWCASE DESKTOP ----- +++ */
+@media (min-width: 1080px) {
+    .showcase__img--single {
+        max-width: 43rem;
+    }
+
+    .showcase__img--row {
+        width: 50%;
+    }
+
+
+    .solution__img--double {
+        flex-direction: row;
+    }
+
+
+    .solution__img--L {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .solution__img--R {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+
+    .solution__copy {
+        flex: 1;
+    }
+}
+
+
+
+/* ==============================================
+   . + . + . + . + .  FOOTER  . + . + . + . + .
+=============================================== */
+
+/* +++ ----- FOOTER BACKGROUND ----- +++ */
+.footer {
+    background: linear-gradient(180deg, var(--grey_0D) 0%, var(--grey_07) 100%);
+    background-color: green;
+    padding: 5rem 0;
+    gap: var(--gap-48);
+}
+
+.footer__copy {
+    gap: var(--gap-8);
+}
+
+.footer__title {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-8);
+}
+
+.footer__links {
+    flex-direction: row;
+    align-items: center;
+
+    gap: var(--gap-24);
+}
