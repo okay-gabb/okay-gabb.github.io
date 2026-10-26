@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cool.css">
-    <title>Spartan App Encryption | Gabb</title>
+    <title>Gabb | Spartan App Encryption</title>
 </head>
 <body class="theme--light offset">
-
 
     <!-- ============================================
        [SEC] HEADER 
     =============================================== -->
-    <main class="showcase wrapper flex">
+    <main id="top" class="showcase wrapper flex">
 
 
         <!-- + [SUB] BACK BUTTON + -->
@@ -30,83 +29,46 @@
             <div class="showcase__title flex">
 
 
-                <p>Spartan Camera</p>
+                <p>SPARTAN CAMERA</p>
                 <h1>AES-256 Encryption Integration</h1>
 
 
             </div>
 
+            <!-- + [SUB] SPEC BOX  + -->
+            <div class="showcase__spec flex">
 
-            <!-- + [SUB] PROJECT DETAILS   + -->
-            <div class="showcase__details flex">
+                <p><strong>Role</strong> Ux / UI Designer</p>
+                <p><strong>Scope</strong> Photo viewing for mobile apps and web portal </p>
+                <p><strong>Tools</strong> Figma, Jira, confluence, Google Docs</p>
+                <p><strong>Status</strong> in Production</p>
+
+            </div>
+
+
+            <!-- + [SUB] TABLE OF CONTENTS (MINI DESIGN PASS PREVIEW) + -->
+            <nav class="showcase__toc flex">
+
+                <p>CONTENTS</p>
+                <a href="#description"><span>Description</span><span class="showcase__toc-dots"></span><span>[00]</span></a>
+                <a href="#app-integration"><span>App Integration</span><span class="showcase__toc-dots"></span><span>[01]</span></a>
+
+            </nav>
+
+            <!-- + [SUB] DESCRIPTION  + -->
+            <div id="description" class="showcase__info flex">
 
 
                 <div class="ascii--border">
                     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                 </div>
 
-                <p>
+                <p>Spartan Camera needed a new encryption system for its newest products. The request originally came from a government agency we work with, but the work had to end up simple enough to ship in production firmware for everyday users too.</p>
 
+                <p>The task was to have the mobile app and web portal handle encrypted images without permanently storing the encryption key anywhere, and the experience still had to feel seamless for the person looking at their photos.</p>
 
-                    Project Showcase Copyright © 2026 <br />
-                    LAST UPDATED: Oct, 2026 <br />
-                    AUTHOR: ⊹ Gabb ⊹ <br />
-                    VERSION: 1.4
+                <p>As the only designer for this project, my job was to design that decryption flow from concept to release. That meant mapping out how users would interact with encrypted images, when the app actually needed to decrypt something, and how to keep the whole process out of the user's way as much as possible.</p>
 
-
-                </p>
-
-
-            </div>
-
-
-            <!-- + [SUB] ROLE  + -->
-            <div class="showcase__info flex">
-
-
-                <div class="ascii__title flex">
-
-
-                    <div class="ascii--border">
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                    </div>
-                    <h2>+++ Role +++</h2>
-
-
-                </div>
-
-                <p>Product Designer</p>
-
-                <p>My job here was to design a decryption flow for a new encryption system for our newest products.</p>
-
-                <p>The main challenge was making sure the mobile app and server could handle the encryption without permanently storing the encryption key anywhere.</p>
-
-                <p>This meant I had to map out how users would interact with encrypted images, when the app needed to decrypt them, and how we could keep the whole process mostly seamless for the user.</p>
-
-
-            </div>
-
-
-            <!-- + [SUB] DESCRIPTION  + -->
-            <div class="showcase__info flex">
-
-
-                <div class="ascii__title flex">
-
-
-                    <div class="ascii--border">
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                    </div>
-                    <h2>+++ Description +++</h2>
-
-
-                </div>
-
-                <p>This project focused on integrating encrypted images into the Spartan Camera app, allowing users to securely receive and decrypt transmitted images directly inside the app.</p>
-
-                <p>Originally requested by a government agency we work with, but the solution ended up being simple enough to include as part of the production firmware so it could be accessible to everyday users as well.</p>
-
-                <p>The full process can be found below.</p>
 
                 <!-- + Description links  + -->
                 <div class="showcase__links flex">
@@ -126,7 +88,7 @@
         <!-- ============================================
             [SEC] SECTION 01
         =============================================== -->
-        <section class="showcase__section flex">
+        <section id="app-integration" class="showcase__section flex">
 
 
             <!-- + [SUB] PROBLEM 03  + -->
@@ -152,8 +114,16 @@
                 <!-- + problem copy 03  + -->
                 <div class="solution__img--L flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_03_encyption/01_integration_p1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_03_encyption/01_integration_p1.png" alt="Two overlapping light themed phones showing a photo library grid and a night vision deer photo detail view with download, share, and delete icons." />
+
+                        <figcaption class="showcase__caption">
+                            Before: a normal library and photo view, with no visible sign of which photos were encrypted.
+                        </figcaption>
+                        
+                    </figure>
+                    
 
                     <div class="solution__copy flex">
 
@@ -195,8 +165,16 @@
                 <!-- + [SUB] SOLUTION  + -->
                 <div class="solution__img--R flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_03_encyption/01_integration_s1.png" alt="" />
+                    <img class="img--showcase showcase__img--row flex" src="assets/project_03_encyption/01_integration_s1.png" alt="A flow diagram showing a library grid with padlocked photo thumbnails, a password locked keypad screen, a decrypting state, and the end result of an unlocked photo." />
+
+                    <figcaption class="showcase__caption">
+                        After: encrypted photos stay locked in the library until the password is entered, then open like any other photo.
+                    </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
@@ -316,7 +294,7 @@
 
 
                 <h4>Gabb</h4>
-                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="here i am, doing a wahoo moment. so cool so wow so awsome so nice, thank you for reaching the bottom of the page in this brazy day and age where we have zero to no patience to read more then 90s wawa!">
+                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="A pixel bunny celebrating appears!">
 
                 
             </div>

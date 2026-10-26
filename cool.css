@@ -594,10 +594,77 @@ p {
 }
 
 
+/* +++ ----- SPEC BOX ----- +++ */
+.showcase__spec {
+    border: 0.0625rem solid var(--grey_CC);
+    background-color: var(--grey_EA);
+    padding: 1.5rem;
+    gap: var(--gap-8);
+    max-width: 50rem;
+}
+
+.showcase__spec strong {
+    display: inline-block;
+    min-width: 5rem;
+}
+
+
+/* +++ ----- TABLE OF CONTENTS ----- +++ */
+.showcase__toc {
+    gap: var(--gap-8);
+    max-width: 50rem;
+    font-family: 'SpaceMono', Courier, monospace;
+}
+
+.showcase__toc a {
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--grey_44);
+}
+
+.showcase__toc-dots {
+    flex: 1;
+    border-bottom: 0.0625rem dotted var(--grey_88);
+    margin-bottom: 0.25rem;
+}
+
+
 /* +++ ----- LINKS ----- +++ */
 .showcase__links {
     gap: var(--gap-8);
 }
+
+/* +++ ----- IMAGE FRAMES AND CAPTIONS ----- +++ */
+.showcase__figure {
+    border: 0.0625rem solid var(--grey_CC);
+    background-color: var(--grey_EA);
+    padding: 0.75rem;
+    margin: 0;
+}
+
+.showcase__figure img {
+    aspect-ratio: auto;
+    max-width: none;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.showcase__caption {
+    font-family: 'SpaceMono', Courier, monospace;
+    font-size: 0.875rem;
+    color: var(--grey_44);
+    margin-top: 0.5rem;
+}
+
+.solution__img--double .showcase__figure,
+.solution__img--L .showcase__figure,
+.solution__img--R .showcase__figure {
+    flex: 1;
+    min-width: 0;
+}
+
 
 
 /* +++ ----- SHOWCASE ----- +++ */

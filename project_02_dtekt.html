@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cool.css">
-    <title>DTEKT App and Design System | Gabb</title>
+    <title>Gabb | DTEKT App and Design System</title>
 </head>
 <body class="theme--light offset">
-
 
     <!-- ============================================
        [SEC] HEADER 
     =============================================== -->
-    <main class="showcase wrapper flex">
+    <main id="top" class="showcase wrapper flex">
 
 
         <!-- + [SUB] BACK BUTTON + -->
@@ -37,74 +36,43 @@
             </div>
 
 
-            <!-- + [SUB] PROJECT DETAILS   + -->
-            <div class="showcase__details flex">
+            <!-- + [SUB] SPEC BOX  + -->
+            <div class="showcase__spec flex">
+
+                <p><strong>Role</strong> UX / UI Designer</p>
+                <p><strong>Scope</strong> App, Design System, System Integration, Bluetooth </p>
+                <p><strong>Tools</strong> Figma, Postman, ClickUp, Google Docs</p>
+                <p><strong>Status</strong> Paused in Development</p>
+
+            </div>
+
+
+            <!-- + [SUB] TABLE OF CONTENTS (MINI DESIGN PASS PREVIEW) + -->
+            <nav class="showcase__toc flex">
+
+                <p>CONTENTS</p>
+                <a href="#description"><span>Description</span><span class="showcase__toc-dots"></span><span>[00]</span></a>
+                <a href="#product-identity"><span>Product Identity</span><span class="showcase__toc-dots"></span><span>[01]</span></a>
+                <a href="#bluetooth-setup"><span>Bluetooth Setup</span><span class="showcase__toc-dots"></span><span>[02]</span></a>
+
+            </nav>
+
+
+            <!-- + [SUB] DESCRIPTION  + -->
+            <div id="description" class="showcase__info flex">
 
 
                 <div class="ascii--border">
                     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                 </div>
 
-                <p>
 
+                <p>DTEKT is a new trail camera platform built on Spartan Camera, branching into a new market with more hardware to play with, including Bluetooth and AI that helps hunters identify game.</p>
 
-                    Project Showcase Copyright © 2026 <br />
-                    LAST UPDATED: Jul, 2026 <br />
-                    AUTHOR: ⊹ Gabb ⊹ <br />
-                    VERSION: 2.2
+                <p>The catch was resources. The development team was already stretched thin across an app, data plans, and a complicated backend, so building a whole second system from scratch was not a realistic option. DTEKT still had to feel like its own product, not just a reskin, and the team could not afford to maintain two completely different systems.</p>
 
+                <p>My job was to work with the design lead on the technical details, existing patterns, and user feedback, contributing screens and page designs before we finalized them together. I was also responsible for turning those designs into spec docs for the mobile developers, making sure what we drew was actually feasible with the APIs and hardware we had.</p>
 
-                </p>
-
-
-            </div>
-
-
-            <!-- + [SUB] ROLE  + -->
-            <div class="showcase__info flex">
-
-
-                <div class="ascii__title flex">
-
-
-                    <div class="ascii--border">
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                    </div>
-                    <h2>+++ Role +++</h2>
-
-
-                </div>
-
-                <p>Design Associate</p>
-
-                <p>Worked with the design lead on technical details, existing UX patterns, and user feedback. I contributed screens and page designs before we finalized them together. </p>
-                
-                <p>I was also responsible for translating our designs into spec docs for the mobile developers, making sure the designs were actually feasible with the APIs and hardware we had available.</p>
-
-
-            </div>
-
-
-            <!-- + [SUB] DESCRIPTION  + -->
-            <div class="showcase__info flex">
-
-
-                <div class="ascii__title flex">
-
-
-                    <div class="ascii--border">
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                    </div>
-                    <h2>+++ Description +++</h2>
-
-
-                </div>
-
-                <p>DTEKT is an updated trail camera platform based on Spartan Camera. The goal was to branch out into a new market while introducing more hardware capabilities, including Bluetooth communication and embedded AI features to assist hunters with identifying game with animal recognition.</p>
-
-                <p>Since the team already had a background in trail cameras through the Spartan Camera brand, we decided to improve our existing architecture instead of building everything from scratch.</p>
-
-                <p>Part of the process was figuring out how much of the existing system we could reuse while still making DTEKT feel like its own product. This also meant our development team didn't have to maintain two completely different systems, which seemed like a pretty good idea.</p>
 
                 <!-- + Description links  + -->
                 <div class="showcase__links flex">
@@ -126,7 +94,7 @@
         <!-- ============================================
             [SEC] SECTION 01
         =============================================== -->
-        <section class="showcase__section flex">
+        <section id="product-identity" class="showcase__section flex">
 
 
             <!-- + [SUB] PROBLEM 03  + -->
@@ -152,8 +120,16 @@
                 <!-- + problem copy  + -->
                 <div class="solution__img--L flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_02_dtekt/02_identity_p1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_02_dtekt/02_identity_p1.png" alt="Two overlapping phone screens comparing the old light themed Spartan camera list with the new dark themed DTEKT home screen." />
+
+                        <figcaption class="showcase__caption">
+                            Before: the old light camera list set against the new dark DTEKT branding and home screen.
+                        </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
@@ -188,11 +164,18 @@
 
                 </div>
 
-                <!-- + [SUB] SOLUTION 03  + -->
+                <!-- + [SUB] SOLUTION 01  + -->
                 <div class="solution__img--R flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_02_dtekt/02_identity_s1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_02_dtekt/02_identity_s1.png" alt="A grid of six dark themed DTEKT screens showing a photo library, a filters list, a date range calendar, a map, a camera detail screen with weather, and a video player." />
+
+                        <figcaption class="showcase__caption">
+                            After: one dark DTEKT system across the library, filters, date range, map, camera detail, and playback.
+                        </figcaption>
+
+                    </figure>
 
                     <div class="solution__copy flex">
 
@@ -247,7 +230,7 @@
         <!-- ============================================
             [SEC] SHOWCASE 02
         =============================================== -->
-        <section class="showcase__section flex">
+        <section id="bluetooth-setup" class="showcase__section flex">
 
 
             <!-- + [SUB] PROBLEM 01 + -->
@@ -271,7 +254,15 @@
                 </div>
 
                 <!-- + problem copy + -->
-                <img class="img--showcase showcase__img--single flex" src="assets/project_02_dtekt/01_ble_p1.png" alt="" />
+                <figure class="showcase__figure">
+
+                   <img class="img--showcase showcase__img--single flex" src="assets/project_02_dtekt/01_ble_p1.png" alt="A phone showing a Starter Guide overlay on a dimmed device management screen, with the Mount and Arm button highlighted and a Confirm button below." />
+
+                   <figcaption class="showcase__caption">
+                    Before: setup relied on a Starter Guide popup telling users to stay close while pairing, then tap Mount and Arm.
+                   </figcaption>
+
+                </figure>
 
                 <p>The biggest feature introduced in DTEKT was Bluetooth communication.</p>
 
@@ -301,10 +292,26 @@
                 <!-- + solution copy+ -->
                 <div class="solution__img--double flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase" src="assets/project_02_dtekt/01_ble_s1.png" alt="" />
+                        <img class="img--showcase" src="assets/project_02_dtekt/01_ble_s1.png" alt="A two row flow diagram of many small dark phone screens linked by arrows, from the start of Bluetooth device management to the end of the setup process." />
 
-                    <img class="img--showcase" src="assets/project_02_dtekt/02_ble_s2.png" alt="" />
+                        <figcaption class="showcase__caption">
+                            After: the full Bluetooth setup flow mapped end to end, instead of a single guide popup.
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="showcase__figure">
+
+                        <img class="img--showcase" src="assets/project_02_dtekt/02_ble_s2.png" alt="Two overlapping dark phones from the new pairing flow, one showing camera pairing instructions with a Next button, the other showing a Ready to Deploy screen with a Deploy button." />
+
+                        <figcaption class="showcase__caption">
+                            After: pairing and deployment as clear steps in the new flow, with a Deploy Later option.
+                        </figcaption>
+
+                    </figure>
+
 
 
                     </div>
@@ -313,7 +320,7 @@
 
                     <p>The new flow grabs the relevant information automatically and handles most of the setup in the background.</p>
 
-                    <p>We ended up with a pretty simple setup process: <br />
+                    <p>We eneded up with a pretty simple setup process: <br />
                     Scan the QR code. Select your plan. Wait a moment for the camera to activate and test the connection. And you're good to go. </p>
 
 
@@ -414,7 +421,7 @@
 
 
                 <h4>Gabb</h4>
-                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="here i am, doing a wahoo moment. so cool so wow so awsome so nice, thank you for reaching the bottom of the page in this brazy day and age where we have zero to no patience to read more then 90s wawa!">
+                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="A pixel bunny celebrating appears!">
 
                 
             </div>

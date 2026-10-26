@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cool.css">
-    <title>Spartan Camera Settings Overhaul | Gabb</title>
+    <title>Gabb | Spartan Camera Settings Overhaul</title>
 </head>
 <body class="theme--light offset">
 
@@ -12,7 +12,7 @@
     <!-- ============================================
        [SEC] HEADER 
     =============================================== -->
-    <main class="showcase wrapper flex">
+    <main id="top" class="showcase wrapper flex">
 
 
         <!-- + [SUB] BACK BUTTON + -->
@@ -30,81 +30,49 @@
             <div class="showcase__title flex">
 
 
-                <p>Spartan Camera</p>
+                <p>SPARTAN CAMERA</p>
                 <h1>Camera Settings App Overhaul</h1>
 
 
             </div>
 
+           <!-- + [SUB] SPEC BOX  + -->
+            <div class="showcase__spec flex">
 
-            <!-- + [SUB] PROJECT DETAILS   + -->
-            <div class="showcase__details flex">
+                <p><strong>Role</strong> UX/UI Designer</p>
+                <p><strong>Scope</strong> Camera Settings Page for the Mobile APP </p>
+                <p><strong>Tools</strong> Figma, Jira, confluence, Google docs</p>
+                <p><strong>Status</strong> In Production</p>
+
+            </div>
+
+
+            <!-- + [SUB] TABLE OF CONTENTS  + -->
+            <nav class="showcase__toc flex">
+
+                <p>CONTENTS</p>
+                <a href="#description"><span>Description</span><span class="showcase__toc-dots"></span><span>[00]</span></a>
+                <a href="#settings-navigation"><span>Settings Naviation</span><span class="showcase__toc-dots"></span><span>[01]</span></a>
+                <a href="#context-menus"><span>Context Menus</span><span class="showcase__toc-dots"></span><span>[02]</span></a>
+
+
+            </nav>
+
+
+            <!-- + [SUB] DESCRIPTION  + -->
+            <div id="description" class="showcase__info flex">
 
 
                 <div class="ascii--border">
                     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                 </div>
 
-                <p>
+                <p>The camera settings page was one of the most heavily used parts of the app, and also one of the most frustrating. Everything was buried in menus inside menus, so finding basic information was hard, and understanding what a setting would actually do was even harder.</p>
 
+                <p>The goal was to make the settings page less annoying.</p>
 
-                    Project Showcase Copyright © 2026 <br />
-                    LAST UPDATED: Oct, 2026 <br />
-                    AUTHOR: ⊹ Gabb ⊹ <br />
-                    VERSION: 1.1
+                <p>As the only designer at the company at the time, my job was to work directly with beta testers and developers to restructure the settings experience, improve navigation, document the changes, and prepare the workflow for release. This was my first major project where I was pretty much responsible for the design, functionality, documentation, and communication between the backend and mobile developers.</p>
 
-
-                </p>
-
-
-            </div>
-
-
-            <!-- + [SUB] ROLE  + -->
-            <div class="showcase__info flex">
-
-
-                <div class="ascii__title flex">
-
-
-                    <div class="ascii--border">
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                    </div>
-                    <h2>+++ Role +++</h2>
-
-
-                </div>
-
-                <p>Product Designer</p>
-
-                <p>As the only designer at the company at the time, my job was to work directly with beta testers and developers to restructure the settings experience, improve navigation, document the changes, and prepare the workflow for release.</p>
-
-                <p>This was my first major project where I was pretty much responsible for the design, functionality, documentation, and communication between backend and mobile developers.</p>
-
-
-            </div>
-
-
-            <!-- + [SUB] DESCRIPTION  + -->
-            <div class="showcase__info flex">
-
-
-                <div class="ascii__title flex">
-
-
-                    <div class="ascii--border">
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                    </div>
-                    <h2>+++ Description +++</h2>
-
-
-                </div>
-
-                <p>The camera settings page was one of the most heavily used parts of the app, but it was also one of the most frustrating.</p>
-
-                <p>One of the main reasons is because the original would bury everything within more menus, making it harder to find basic information and even harder to understand what a setting would actually do.</p>
-
-                <p>I had one simple goal. Make the settings page less annoying.</p>
 
                 <!-- + Description links  + -->
                 <div class="showcase__links flex">
@@ -124,10 +92,10 @@
         <!-- ============================================
             [SEC] SECTION 01
         =============================================== -->
-        <section class="showcase__section flex">
+        <section id="settings-navigation" class="showcase__section flex">
 
 
-            <!-- + [SUB] PROBLEM  + -->
+            <!-- + [SUB] PROBLEM 01  + -->
             <div class="showcase__conflict flex">
 
 
@@ -150,15 +118,23 @@
                 <!-- + problem copy  + -->
                 <div class="solution__img--L flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/01_nav_p1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/01_nav_p1.png" alt="A collage of many light themed settings screens showing trigger settings, camera settings, system settings, and an add event form." />
+
+                        <figcaption class="showcase__caption">
+                            Before: settings spread across many nested screens that users had to open and close to find basic information.
+                        </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
 
                         <p>Basically, the main problem here was that the settings page was an endless menu of subpages.</p>
 
-                        <p>Users were constantly opening and closing menus just to find basic information, like if the camera was in 'Photo + Video' mode, or just 'Photo' mode.</p>
+                        <p>Users were consstantly opening and closing menus just to find basic information, like if the camera was in 'Photo + Video mode', or just 'Photo' mode.</p>
 
                         <p>It was a waste of time and caused a ton of confusion, since users would often forget what setting they had just changed by the time they got back to the main page.</p>
 
@@ -189,8 +165,16 @@
                 <!-- + [SUB] SOLUTION 03  + -->
                 <div class="solution__img--R flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/01_nav_s1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/01_nav_s1.png" alt="Two overlapping phones showing a consolidated Camera Options screen with expandable sections for camera settings, trigger settings, work days, system settings, and wireless settings." />
+
+                        <figcaption class="showcase__caption">
+                            After: the main settings on one Camera Options screen, collapsed by default, with Update and Retrieve at the bottom.
+                        </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
@@ -199,7 +183,7 @@
 
                         <p>Instead, users could now see the most important settings at a glance and open only the specific category they wanted to change.</p>
 
-                        <p>This made the page easier to scan and helped users keep track of what they were actually changing without having to dig through a bunch of subpages making the settings page significantly easier to navigate and reduced the amount of information users had to retain at once. </p>
+                        <p>This made the page easier to scan and helped users keep track of what they were actually changing without having to dig through a bunch of subpages making the settings page siginificatntly easier to navigate and reduced the amount of information users had to retain at once. </p>
 
 
                     </div>
@@ -218,7 +202,7 @@
         <!-- ============================================
             [SEC] SECTION 02
         =============================================== -->
-        <section class="showcase__section flex">
+        <section id="context-menus" class="showcase__section flex">
 
 
             <!-- + [SUB] PROBLEM 03  + -->
@@ -244,8 +228,16 @@
                 <!-- + problem copy  + -->
                 <div class="solution__img--R flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/02_clarity_p1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/02_clarity_p1.png" alt="Two overlapping settings panels listing camera mode, photo size, thumbnail size, photo burst, video settings, system settings, unset events, and wireless settings." />
+                        
+                        <figcaption class="showcase__caption">
+                            Before: dense lists of setting values with little explanation of what each one actually did.
+                        </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
@@ -287,8 +279,16 @@
                 <!-- + [SUB] SOLUTION 01  + -->
                 <div class="solution__img--L flex">
 
+                    <figure class="showcase__figure">
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/02_clarity_s1.png" alt="" />
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/02_clarity_s1.png" alt="A phone showing a Camera Settings help sheet sliding over a dimmed Camera Options screen, explaining nametag, camera mode, and photo size in plain language." />
+
+                        <figcaption class="showcase__caption">
+                            After: plain language explanations for each setting, available on demand without cluttering the main screen
+                        </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
@@ -307,7 +307,16 @@
                 <div class="solution__img--R flex">
 
 
-                    <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/02_clarity_s2.png" alt="" />
+                    <figure class="showcase__figure">
+
+                        <img class="img--showcase showcase__img--row flex" src="assets/project_04_settings/02_clarity_s2.png" alt="Two overlapping phones showing the consolidated Camera Options screen, with a confirmation dialog for resetting the camera to its default settings." />
+
+                        <figcaption class="showcase__caption">
+                            After: the Default escape hatch, with a confirmation step before it sends a reset command to the camera.
+                        </figcaption>
+
+                    </figure>
+
 
                     <div class="solution__copy flex">
 
@@ -416,7 +425,7 @@
 
 
                 <h4>Gabb</h4>
-                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="here i am, doing a wahoo moment. so cool so wow so awsome so nice, thank you for reaching the bottom of the page in this brazy day and age where we have zero to no patience to read more then 90s wawa!">
+                <img class="img--pixelated--m" src="assets/global/bunnFooter.gif" alt="A pixel bunny celebrating appears!">
 
                 
             </div>
